@@ -43,5 +43,23 @@
     color:goldenrod;
   }
 
+  #homepageTemple{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("/images/Logantemple.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+    height: 800px;
+  }
+
+  #homepageTemple img{
+    display: none;
+  }
   
+  #homepageTemple p{
+    background-color:rgb(240, 248, 255);
+    padding: 20px;
+  }  
 }

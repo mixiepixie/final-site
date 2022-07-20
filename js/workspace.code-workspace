@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../wdd230/chamber"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "final-site"
+	}
+}

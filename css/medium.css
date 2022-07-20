@@ -1,3 +1,41 @@
 @media only screen and (min-width: 32.5em){
+  #homepageTemple{
+    overflow: auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center; */
+  }
   
+  #homepageTemple h3{
+    grid-column: 1/-1;
+    padding: 10px;
+  }
+  
+  #homepageTemple img{
+    float: left;
+    width: 35%;
+    padding: 20px;
+  }
+
+  #weather{
+    display: flex;
+    justify-content:center;
+    
+    
+  }
+
+  .weather{
+    border: solid goldenrod;
+    margin: 15px 0px;
+    padding: 50px 6.5%;
+  }
+
+  #homepageTemple p{
+    text-align: left;
+  }
+
+  #homepageTemple img{
+    width: 35%;
+
+  }
 }

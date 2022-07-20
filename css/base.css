@@ -34,6 +34,10 @@ header, footer{
   color: white;
 }
 
+#homepage{
+  background-color: rgb(20, 33, 70);
+}
+
 h1{
   font-family: 'Kaushan Script', cursive;
 }
@@ -42,8 +46,24 @@ h2{
   padding: 20px 20px 0px 20px;
 }
 
-h3{
+h3, #dayofweeknextday{
   font-family: 'Koulen', cursive;
+  font-size: 2em;
+}
+
+.temp{
+  font-size: 1.75em;
+  font-weight: bolder;
+}
+
+#weather{
+  margin: 15px 0;
+
+}
+
+.weather{
+  border: solid goldenrod;
+  margin: 0px 15px;
 }
 
 footer{
@@ -142,8 +162,13 @@ nav li:hover{
   background-color: goldenrod;
 }
 
+#homepageTemple p{
+  text-align: center;
+  padding: 0 40px 40px 40px;
+}
+
 #homepageTemple{
-  overflow: auto;
+  /* display: inline; */
   /* display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center; */
@@ -155,16 +180,10 @@ nav li:hover{
 }
 
 #homepageTemple img{
-  float: left;
-  width: 35%;
+  width: 80%;
   padding: 20px;
 }
 
-#homepageTemple p{
-  /* display: flex;
-  justify-self: center; */
-  padding: 10px;
-}
 
 .graySection{
  background-color: rgb(182, 189, 196);
@@ -230,7 +249,7 @@ input[type=submit]:hover {
   margin: 0;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #555;
 }
 
