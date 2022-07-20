@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio&family=Kaushan+Script&family=Koulen&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Gelasio', serif;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+p{
+  padding: 10px;
+}
+
+button{
+  margin: 20px;
+  padding: 5px;
+}
+
+header{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: space-around;
+}
+
+header, footer{
+  background-color:rgb(5, 5, 8);
+  color: white;
+}
+
+h1{
+  font-family: 'Kaushan Script', cursive;
+}
+
+h2{
+  padding: 20px 20px 0px 20px;
+}
+
+h3{
+  font-family: 'Koulen', cursive;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+}
+
+.footer-right-column{
+  display: inline;
+}
+
+#credit, #copyright{
+  font-size: x-small;
+}
+/* footer .fa{
+  f
+} */
+
+/* .navBarSmallView{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+
+.logo{
+  width: 5em;
+  padding: 10px;
+}
+
+.smIcons{
+  display: flex;
+  justify-content: flex-end;
+  background-color: none;
+}
+
+.smIcons i{
+font-size: 3em;
+align-self: center;
+margin: 5px;
+}
+
+.hamburger :nth-child(2){
+  display: none;
+}
+
+.hamburger :nth-child(2){
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em; 
+}
+
+.active :first-child{
+  display: none;
+}
+
+.active :nth-child(2){
+  display: block;
+}
+
+/* affects the nav links when responsive class is applied */
+.navigation{
+  display: none;
+}
+
+.responsive{
+  display: grid;
+}
+
+nav{
+  grid-column: 1/-1;
+}
+
+/*changes only page that it's on*/
+nav li .active{
+  color: goldenrod;
+}
+
+nav li{
+  padding: 50px;
+}
+
+nav li:hover{
+  background-color: rgb(204, 208, 211);
+  border-style: solid;
+  color: black;
+  }
+
+.blueSection{
+  background-color:rgb(20, 33, 70);
+  color: white;
+}
+
+.goldSection{
+  background-color: goldenrod;
+}
+
+#homepageTemple{
+  overflow: auto;
+  /* display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center; */
+}
+
+#homepageTemple h3{
+  grid-column: 1/-1;
+  padding: 10px;
+}
+
+#homepageTemple img{
+  float: left;
+  width: 35%;
+  padding: 20px;
+}
+
+#homepageTemple p{
+  /* display: flex;
+  justify-self: center; */
+  padding: 10px;
+}
+
+.graySection{
+ background-color: rgb(182, 189, 196);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+}
+
+
+/* //stay page below */
+
+label {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset{
+  margin: 30px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+
+/* div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
+
+/* services.html below */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 0;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+
+}

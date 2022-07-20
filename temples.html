@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Suites</title>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+  <!-- <div class="navBarSmallView"> -->
+  <a href="index.html"><img class="logo" src="images/temple-hotel-logo-small200w.webp" alt="Temple Suites Logo" /></a>
+  <h1>Temple Suites</h1>
+  <div class="smIcons">
+    <i class="icon ion-logo-facebook"></i>
+    <i class="icon ion-logo-linkedin"></i>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span>&#9776;</span>
+    <span>x</span>
+
+  </div>
+  <!-- </div> -->
+
+  <nav>
+    <ul class="navigation">
+      <li>
+        <a href="index.html" title="Temple Suites Home page">Home</a>
+      </li>
+      <li><a href="temples.html" class="active">Temples</a></li>
+      <li><a href="stay.html">Stay</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section class="blueSection">
+    <h2>Temple Information</h2>
+  </section>
+  <section id="templeGrid" class="goldSection">
+    <!-- img -->
+    <!-- <h3>Temple Name</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero laudantium fugiat maxime id fuga numquam possimus omnis reprehenderit, obcaecati dolores enim corporis ipsam illo odit impedit accusantium. Culpa, rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium velit odit ab accusantium, corporis eos sapiente nihil magnam itaque pariatur doloremque alias. </p>
+    <h3>Temple Name</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero laudantium fugiat maxime id fuga numquam possimus omnis reprehenderit, obcaecati dolores enim corporis ipsam illo odit impedit accusantium. Culpa, rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium velit odit ab accusantium, corporis eos sapiente nihil magnam itaque pariatur doloremque alias. </p>
+    <h3>Temple Name</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero laudantium fugiat maxime id fuga numquam possimus omnis reprehenderit, obcaecati dolores enim corporis ipsam illo odit impedit accusantium. Culpa, rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At praesentium velit odit ab accusantium, corporis eos sapiente nihil magnam itaque pariatur doloremque alias. </p> -->
+  </section>
+</body>
+<footer>
+  <a href="index.html"><img class="logo" src="images/temple-hotel-logo-small200w.webp" alt="Temple Suites Logo" /></a>
+  <div>
+    <p>templesuites@email.com</p>
+    <a href="https://goo.gl/maps/mvVhQPgqAqyZXo4L9" target="_blank">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
+
+
+    <p id="credit">The weather information is courtesy of <a
+        href="https://openweathermap.org">openweathermap.org</a><br>The
+      temple images on our page were sourced from <a
+        href="https://www.churchofjesuschrist.org/temples/list?lang=eng">www.churchofjesuschrist.org</a><br>The icons
+      on this page are sourced from <a href="https://ionic.io/ionicons/v4">ionic.io</a> and <a
+        href="https://fontawesome.com/">fontawesome.com</a></p>
+    <!-- <p>The icons on this page are sourced from <a href="https://ionic.io/ionicons/v4">https://ionic.io</a>
+    </p> -->
+
+    <p id="copyright">&copy;Copyright 2022 - Temple Suites WDD 230 Final Project - Michal Garcia <br>Last Modified:
+      <span id="lastmod"></span>
+    </p>
+
+  </div>
+  <div class="footer-right-column">
+    <a href="https://goo.gl/maps/mvVhQPgqAqyZXo4L9" target="_blank">Map <i style="font-size:10px"
+        class="fa">&#xf08e;</i><br></a>
+    <div class="smIcons">
+      <i class="icon ion-logo-facebook"></i>
+      <i class="icon ion-logo-linkedin"></i>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/templecards.js"></script>
+
+</html>

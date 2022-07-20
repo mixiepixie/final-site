@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1009px){
+  /* .navBarSmallView{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } */
+  
+  /* .navBarLargeView{
+    display: flex;
+  } */
+
+  .hamburger{
+    display: none;
+  }
+
+  header{
+    display: flex;
+  }
+
+  .navigation{
+    display: flex;
+  }
+
+  /* .logo{
+    order: 1;
+  } */
+
+  /* h1{
+    order: 2;
+  } */
+
+  /* .navigation{
+    order: 3;
+  } */
+
+  nav li{
+    padding: 0px 30px;
+    
+  }
+
+  .smIcons{
+    order: 4;
+    color:goldenrod;
+  }
+
+  
+}
