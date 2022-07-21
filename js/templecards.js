@@ -1,83 +1,4 @@
 
-// fetch('js/data.json')
-// .then(function (response) {
-//   return response.json();
-// })
-// .then(function (jsonObject) {
-//   console.log(jsonObject);
-//   const temples = jsonObject['temples'];
-//   console.table(jsonObject);  // temporary checking for valid response and data parsing
-//   temples.forEach(displayTemples);
-// });
-
-// function displayTemples(temple){
-
-
-// cardsDisplay = document.getElementById('templeGrid');
-// createCard = document.createElement('div');
-// templeImg = document.createElement('img');
-// templeName = document.createElement('h3');
-// templeAdd = document.createElement('p');
-// templeTel = document.createElement('p');
-// templeEmail = document.createElement('p');
-// templeServices = document.createElement('ul');
-
-
-// templeHist = document.createElement('p');
-// templeOrdSched = document.createElement('p');
-// templeSeshSched = document.createElement('p');
-// templeCloseSched = document.createElement('ul');
-// linebreak = document.createTextNode('<br>');
-
-
-// templeImg.classList.add("templeimg");
-// templeImg.setAttribute('src', temple.imageurl);
-// templeImg.setAttribute('alt', `${temple.name} Photo`);
-
-// // .join("<br>") + "<br>";
-// // templeServices.innerHTML = temple.services;
-// // console.log(templeServices.innerHTML);
-
-
-// templeName.textContent = temple.name;
-// templeAdd.textContent = temple.address;
-// templeTel.textContent = temple.telnum;
-// templeHist.textContent = temple.imageurl;
-// templeServices.textContent = temple.services;
-
-
-// // cardsDisplay.appendChild(createCard);
-
-// // console.log(temple.services);
-
-// // temple.services[0].appendChild(linebreak);
-// // temple.services.forEach(element => {
-// //   service = document.createElement('li');
-// //   service.textContent = element;
-// //   service.appendChild(linebreak);
-// //   console.log(service);
-// //   templeServices.appendChild(service);
-// //   createCard.appendChild(templeServices);
-// //   // service.classList.add();
-// // });
-
-// // console.log(templeServices.innerHTML);
-
-// createCard.appendChild(templeImg);
-// createCard.appendChild(templeName);
-// createCard.appendChild(templeAdd);
-// createCard.appendChild(templeTel);
-// createCard.appendChild(templeHist);
-// createCard.appendChild(templeServices);
-
-
-
-
-
-// };
-
-
-
 fetch('js/data.json')
 .then(function (response) {
   return response.json();
@@ -121,17 +42,21 @@ function toggle() {
   const like = button.textContent;
   if(like==whiteHeart) {
     button.textContent = blackHeart;
-    localStorage.setItem('heart', 'blackHeart');
-    
+    heartbutton.classList.add("blackHeart");
+    // window.localStorage.setItem('heart', 'whiteHeart');
   } else {
     button.textContent = whiteHeart;
-    localStorage.removeItem('heart');
-    
-  
+    heartbutton.classList.remove("blackHeart");
+    // window.localStorage.setItem('heart', 'blackHeart');
   }
 }
 
-
+// if (localStorage.getItem("heart") === 'blackHeart'){
+//   heartbutton.textContent = blackHeart;
+// }
+// else{
+//   heartbutton.textContent = whiteHeart;
+// }
 
 // if (heartbutton.textContent = blackHeart){
   
@@ -184,14 +109,15 @@ cardsDisplay.appendChild(createCard);
 createCard.appendChild(templeImg);
 createCard.appendChild(templeName);
 createCard.appendChild(heartbutton);
-createCard.appendChild(templeAdd);
 createCard.appendChild(templeTel);
+createCard.appendChild(templeEmail);
+createCard.appendChild(templeAdd);
 createCard.appendChild(templeHist);
 createCard.appendChild(templeServices);
-createCard.appendChild(templeOrdSched);
+// createCard.appendChild(templeOrdSched);
 createCard.appendChild(templeSeshSched );
 createCard.appendChild(templeCloseSched);
-createCard.appendChild(templeEmail);
+
 createCard.appendChild(templeServices);
 
 console.log(cardsDisplay.innerHTML);
