@@ -104,7 +104,7 @@ footer{
 .smIcons{
   display: flex;
   justify-content: flex-end;
-  background-color: none;
+
 }
 
 .smIcons i{
