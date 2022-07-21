@@ -52,6 +52,7 @@
           <legend>Hotel Selection</legend>
           <label for="location">Choose a location:*
             <select name="location" id="location" required="required">
+              <option value="" disabled selected>Select an Option</option>
               <option value="brigham city">Brigham City</option>
               <option value="jordan river">Jordan River</option>
               <option value="provo">Provo</option>
@@ -59,20 +60,20 @@
             </select></label>
 
           <label>Visit Start Date:*
-            <input type="date" name="startdate" required="required" required pattern="\d{4}-\d{2}-\d{2}">
+            <input type="date" name="startdate" required="required">
             <span class="validity"></span>
           </label>
           <label>Visit End Date:*
-            <input type="date" name="startdate" required="required" required pattern="\d{4}-\d{2}-\d{2}">
+            <input type="date" name="startdate" required="required">
             <span class="validity"></span>
           </label>
 
-          <label class="top">Number of rooms* <input type="text" name="numrooms" pattern="[1-9\-\s]{6,"
-              required></label>
+          <label class="top">Number of rooms* <input type="text" name="numrooms" required="required"></label>
 
 
           <label for="roomtype">Type of Room:*
             <select name="roomtype" id="roomtype" required="required">
+              <option value="" disabled selected>Select an Option</option>
               <option value="king suite">King Suite</option>
               <option value="double queen">Double Queen</option>
               <option value="missionary suite">Missionary Suite</option>
