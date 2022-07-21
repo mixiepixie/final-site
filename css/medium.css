@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em){
+@media only screen and (min-width: 643px){
   #homepageTemple{
     overflow: auto;
     /* display: grid;
@@ -38,4 +38,30 @@
     width: 35%;
 
   }
+
+  #templeGrid img{
+   
+    max-height: 450px;
+    /* float: left; */
+  }
+
+
+  /* services below */
+  .content img{
+    max-width: 35%;
+    float: left;
+    margin: 20px 0;
+    margin-right: 20px;
+  }
+  
+  .content p{
+    text-align: left;
+    padding: 20px;
+   
+  
+  }
+  /* #templeGrid div{
+    
+  } */
+
 }

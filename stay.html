@@ -46,24 +46,24 @@
 
 
     <div class="yourInfo">
-      <h1>Book your Room</h1>
-      <form method="get" action="thankyou.html">
+      <h2 id="headerstayform">Book your Room</h2>
+      <form method="get" action="bookedroom.html">
         <fieldset>
           <legend>Hotel Selection</legend>
-          <label for="location">Choose a location:</label>
-          <select name="location" id="location">
-            <option value="brigham city">Brigham City</option>
-            <option value="jordan river">Jordan River</option>
-            <option value="provo">Provo</option>
-            <option value="mount timpanogos">Mount Timpanogos</option>
-          </select>
+          <label for="location">Choose a location:*
+            <select name="location" id="location" required="required">
+              <option value="brigham city">Brigham City</option>
+              <option value="jordan river">Jordan River</option>
+              <option value="provo">Provo</option>
+              <option value="mount timpanogos">Mount Timpanogos</option>
+            </select></label>
 
-          <label>Visit Start Date:
-            <input type="date" name="startdate" required pattern="\d{4}-\d{2}-\d{2}">
+          <label>Visit Start Date:*
+            <input type="date" name="startdate" required="required" required pattern="\d{4}-\d{2}-\d{2}">
             <span class="validity"></span>
           </label>
-          <label>Visit End Date:
-            <input type="date" name="startdate" required pattern="\d{4}-\d{2}-\d{2}">
+          <label>Visit End Date:*
+            <input type="date" name="startdate" required="required" required pattern="\d{4}-\d{2}-\d{2}">
             <span class="validity"></span>
           </label>
 
@@ -71,13 +71,13 @@
               required></label>
 
 
-          <label for="roomtype">Type of Room:</label>
-          <select name="roomtype" id="roomtype">
-            <option value="king suite">King Suite</option>
-            <option value="double queen">Double Queen</option>
-            <option value="missionary suite">Missionary Suite</option>
-            <option value="single queen">Single Queen</option>
-          </select>
+          <label for="roomtype">Type of Room:*
+            <select name="roomtype" id="roomtype" required="required">
+              <option value="king suite">King Suite</option>
+              <option value="double queen">Double Queen</option>
+              <option value="missionary suite">Missionary Suite</option>
+              <option value="single queen">Single Queen</option>
+            </select></label>
         </fieldset>
 
 
@@ -87,10 +87,10 @@
           <label class="top">Last Name* <input type="text" name="lname" onkeyup="lettersOnly(this)" required></label>
           <!-- REMEMBER! LINE BELOW MUST BE FORMATTED CORRECTLY(GO BACK TO W08 ASSIGN. JOIN PAGE) -->
           <!-- <label class="top">Business Position <input type="text" name="bisPosition" onkeyup="lettersAndNumbers(this)" pattern="[A-Za-z\-\s]{6,}"></label -->
-          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" onkeyup="numbersOnly(this)"
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+              required="required"></label>
+          <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" onkeyup="numbersOnly(this)"
               required></label>
-          <label class="top">Business Name* <input type="text" name="bisName" required></label>
         </fieldset>
 
 
